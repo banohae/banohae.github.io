@@ -57,7 +57,21 @@
         <h2>Kỹ Năng</h2>
         <p>Python • HTML5 • CSS3 • Lập trình Website</p>
 
-       <a href="https://drive.google.com/drive/u/0/folders/1YNE62GS8L7Q849moee7IJCYLPWxG_XFS" target="_blank" class="btn">Xem Tất Cả Tài Liệu Của Tôi</a>
+       <!-- Nút bấm yêu cầu nhập mật khẩu -->
+<a href="#" onclick="checkPassword(event)" class="btn">Xem Tài Liệu Ngữ Pháp Tiếng Anh</a>
+
+<script>
+function checkPassword(event) {
+    event.preventDefault(); 
+    var password = prompt("Vui lòng nhập mật khẩu để truy cập kho tài liệu:");
+    if (password === "23052012") {
+        alert("Mật khẩu chính xác! Đang mở kho tài liệu Tiếng Anh...");
+        window.open("https://google.com", "_blank"); 
+    } else if (password !== null) {
+        alert("Mật khẩu không chính xác! Bạn không có quyền truy cập.");
+    }
+}
+</script>
     </div>
 
     <footer>
